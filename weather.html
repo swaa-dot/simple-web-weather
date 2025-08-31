@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Cuaca dengan Geolokasi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Masukkan nama kota" id="city-input">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+            <button id="location-btn" class="location-btn"><i class="fas fa-location-arrow"></i></button>
+        </div>
+        
+        <div class="location-results" id="location-results"></div>
+        
+        <div class="loading" id="loading">
+            <i class="fas fa-spinner fa-spin"></i> Memuat data...
+        </div>
+        
+        <div class="weather-box" id="weather-box">
+            <div class="city" id="city-name">Jakarta</div>
+            <div class="date" id="date">Senin, 01 Jan 2023</div>
+            <div class="weather-icon" id="weather-icon"><i class="fas fa-sun"></i></div>
+            <div class="temp"><span id="temp">25</span><span>°C</span></div>
+            <div class="weather" id="weather-description">Cerah</div>
+            
+            <div class="coordinates" id="coordinates">
+                Latitude: <span id="latitude">0</span>, Longitude: <span id="longitude">0</span>
+            </div>
+            
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fas fa-tint"></i>
+                    <div class="text">
+                        <span id="humidity">60</span>%
+                        <div>Kelembapan</div>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fas fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">10</span> km/jam
+                        <div>Angin</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="error" id="error">
+            <i class="fas fa-exclamation-circle"></i> <span id="error-message">Kota tidak ditemukan!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
