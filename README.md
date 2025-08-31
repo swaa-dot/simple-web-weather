@@ -33,7 +33,9 @@ Aplikasi web yang menampilkan informasi cuaca berdasarkan lokasi pengguna atau k
 ### 1. Pencarian Berdasarkan Kota
 - Pengguna memasukkan nama kota di kolom pencarian
 - Aplikasi mengirim request ke API geolokasi:
-`http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=5&appid={API key}`
+```bash
+http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=5&appid={API key}
+```
 - Jika ditemukan beberapa lokasi, pengguna dapat memilih salah satunya
 - Koordinat lokasi digunakan untuk mengambil data cuaca
 
@@ -45,7 +47,9 @@ Aplikasi web yang menampilkan informasi cuaca berdasarkan lokasi pengguna atau k
 
 ### 3. Mendapatkan Data Cuaca
 - Aplikasi mengirim request ke API cuaca:
-`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API key}`
+```bash
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API key}
+```
 - Data cuaca ditampilkan dalam antarmuka pengguna
 
 ## Struktur File
@@ -57,9 +61,13 @@ aplikasi-cuaca/
 ## API yang Digunakan
 
 1. **Geocoding API** - Mendapatkan koordinat dari nama kota
-`http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=5&appid={API key}`
+```bash
+http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=5&appid={API key}
+```
 2. **Current Weather Data API** - Mendapatkan data cuaca terkini
-`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API key}`
+```
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API key}
+```
 
 ## Customization
 
