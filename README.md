@@ -1,4 +1,4 @@
-# Aplikasi Cuaca dengan OpenWeatherMap API
+## Aplikasi Cuaca dengan OpenWeatherMap API
 
 Aplikasi web yang menampilkan informasi cuaca berdasarkan lokasi pengguna atau kota yang dicari. Dibuat menggunakan HTML, CSS, dan JavaScript dengan memanfaatkan API dari OpenWeatherMap.
 
